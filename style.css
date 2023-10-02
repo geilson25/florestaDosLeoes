@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: silver;
+    color: black;
+}
+
+
+header {
+    background-color: #172C7B;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: transparent; /* Tornar o fundo transparente */
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+    transition: color 0.3s, background-color 0.3s; /* Adicionar transição de cor */
+}
+
+/* Quando o cursor passar por cima dos links */
+nav a:hover {
+    color: silver; /* Cor da fonte branca */
+    background-color: #172C7B; /* Cor vermelha de fundo */
+    border-radius: 10vh;
+}
+
+main {
+    color: #172C7B;
+    max-width: 800px;
+    margin: 10vh auto 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajuste do elemento "main" */
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    min-height: 80vh; /* Ajusta a altura para 80% da altura da viewport */
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid #2A368F;
+}
+
+/* Estilo para o cabeçalho */
+.header-content {
+    display: flex; /* Exibe os elementos lado a lado */
+    align-items: center; /* Alinha verticalmente no centro */
+}
+
+.header-content img {
+    border-radius: 5%; /* Transforma a imagem em um círculo */
+    background-color: #fff; /* Fundo branco */
+    padding: 10px; /* Espaçamento dentro do círculo */
+    margin-right: 10px; /* Espaçamento à direita da imagem */
+    width: 8%;
+}
+
+/* Centraliza o texto do h1 */
+.header-content h1 {
+    flex-grow: 1; /* Cresce para ocupar todo o espaço disponível */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Estilos Responsivos*/
+@media screen and (max-width: 7868px){
+    nav ul {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+/* Estilo para o footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #172C7B; /* Mesma cor do header */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilo para a classe .footer-content */
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para os ícones das redes sociais */
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #FDE604; /* Cor amarela ao passar o cursor */
+}
+
+/* Estilo para os ícones das redes sociais */
+.social-icons img {
+    width: 30px; /* Tamanho dos ícones, ajuste conforme necessário */
+    height: 30px;
+}
+
+/* Estilo para a seção "Parque Municipal" */
+#parque {
+    background-image: url('./img/parque.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilo para a seção "Igreja da Matriz" */
+#igreja {
+    background-image: url('./img/igrejaMatriz.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilo para a seção "Museu Histórico" */
+#museu {
+    background-image: url('./img/CasaViva.jpg');
+    background-size: cover;
+    background-position: center;
+}
